@@ -23,14 +23,13 @@ set(CMAKE_PREFIX_PATH your_path_to_libtorch)
 Build the program:
 
 ```bash
-$ cd ./manually_update_grads
 $ mkdir build && cd build
 $ cmake ..
 $ cmake --build ../build
 $ make
 ```
 
-These commands will build the program, write files to ./build and also download cifar10 dataset if it is not found locally. And the path to the dataset is at ./manually_update_grads/data/cifar10 by default, which will be used by the file system when training the ML model. If you want use a different file path, change the code in the main.cpp file:
+These commands will build the program, write files to ./build and also download cifar10 dataset if it is not found locally. And the path to the dataset is at ./data/cifar10 by default, which will be used by the file system when training the ML model. If you want to use a different file path, change the code in the main.cpp file:
 
 ```c++
 // File structure in cifar10:
