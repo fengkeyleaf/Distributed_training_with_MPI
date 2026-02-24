@@ -112,16 +112,16 @@ Tested the program with 2 nodes on one local machine compared to one local machi
 - ResNet
 - CPU training
 
-Please see the results.xlsx file for more details.
+Please see the [results.xlsx](https://github.com/fengkeyleaf/Distributed_training_with_MPI/blob/main/results.xlsx) file for more details.
 
 ※ Ran 3 tests on each machine.
-※ Planed to test with 2 remote servers, but still having a unknown problem after trying different MPI versions and using one local machine and one RIT remote server.
+※ Planned to test with 2 remote servers, but still having an unknown problem after trying different MPI versions and using one local machine and one RIT remote server.
 
 ## Q & A
 
 Q: What if I get [an error](https://stackoverflow.com/questions/34143265/undefined-reference-to-symbol-pthread-createglibc-2-2-5), like "/usr/bin/ld: CMakeFiles/deep-residual-network.dir/src/main.cpp.o: undefined reference to symbol 'pthread_create@@GLIBC_2.2.5'"
 
-A: Add the following cmake command to the CMakeLists.txt file:
+A: Add the following CMake command to the CMakeLists.txt file:
 
 ```cmake
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
